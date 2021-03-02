@@ -4,11 +4,43 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <title>Responsive Web Design - Exercice 4</title>
 </head>
 <body>
+  <div class="row">
+    <div class="col-sm-7 col-md-5 col-lg-4 m-auto">
+      <div class="card text-center mt-5 mx-2">
+        <div class="card-body">
+          <h5 class="card-title">La Manu Le Havre</h5>
+          <p class="card-text">L'école des métiers du numérique</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLaManu">
+            + d'infos
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <!-- Modal -->
+  <div class="modal fade" id="modalLaManu" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">La Manu Le Havre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-primary text-center">
+          <a href="https://lamanu.fr/le-havre" class="text-white text-decoration-none">https://lamanu.fr/le-havre</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" 
+  integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
 </html>
